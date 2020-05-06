@@ -1,0 +1,844 @@
+@media (max-width: 460px)
+	.header
+		flex-direction: column
+		min-height: 0
+		&-logo
+			display: none
+		&-nav
+			&_mobile
+				display: flex
+				justify-content: space-between
+				padding: 14px
+				&-logo
+					img
+						width: 120px
+				.header-humburger
+					height: 24px
+					span
+						height: 2px
+						width: 40px
+						background: #000000
+
+		&-slider
+			margin: 40px 20px 0 20px
+			position: relative
+			&_title
+				color: #ffffff
+				font-size: 34px
+				text-align-last: center
+				line-height: 44px
+			&_text
+				margin-top: 40px
+				font-size: 22px 
+				color: #ffffff
+				width: 80%
+				line-height: 30px
+			.slick-dots
+				li
+					button
+						margin-top: 20px
+				&:after
+					margin-top: 30px
+			.slick-active
+				button
+					color: #ffffff !important
+		&-left
+			padding-bottom: 40px
+			width: 100%	
+			background: url(../img/header-bg1.jpg) center center/cover no-repeat
+			&_animation
+				display: none
+			&_play
+				&-mobile
+					position: static
+					margin: 0 auto
+					height: 70px
+					width: 70px
+					transform: translate(0)
+					margin-top: 60px
+					&_btn
+						position: relative
+						&:after
+							content: ''
+							position: absolute
+							top: 24px
+							left: 32px
+							display: inline-block
+							border: 12px solid transparent
+							border-left: 17px solid black
+							color: #000
+			&_button
+				&-mobile
+					display: block
+					position: static
+					margin: 0 auto
+					margin-top: 60px
+					background: #fff
+					font-size: 16px
+					padding: 14px 30px
+		&-right
+			display: none
+			background: none
+	.menu
+		padding: 40px 0
+		flex-direction: column
+		&-logo
+			left: 20px
+			top: 40px
+			img
+				width: 120px
+		&-close
+			right: 20px
+			top: 30px
+			span
+				width: 24px
+				height: 2.4px
+				&:nth-child(even)
+					margin-top: -3px
+		&-left
+			margin-left: 20px
+			margin-top: 70px
+			order: 2
+			width: 100%
+			&_item
+				display: flex
+				margin-bottom: 20px
+				&-title
+					font-size: 16px
+				&-text
+					font-size: 16px
+					margin-top: 0
+					margin-left: 20px
+				&-social
+					a
+						margin-right: 20px
+						img
+							font-size: 10px
+		&-right
+			margin: 0 auto
+			margin-top: 84px
+			width: 82%
+		&-list
+			
+			a
+				font-size: 26px
+				margin-bottom: 16px
+				text-align: center
+	.services
+		padding-top: 60px
+		padding-bottom: 40px
+		&-title
+			font-size: 32px
+		&-background_web
+			display: none
+			&-mobile
+				display: block
+				position: absolute
+				font-size: 140px
+				font-family: Gilroy-ExtraBold
+				color: rgba(196, 196, 196, 0.42)
+				top: 180px
+				left: 20px
+		&-background_sam
+			display: none
+			&-mobile
+				display: block
+				position: absolute
+				font-size: 140px
+				font-family: Gilroy-ExtraBold
+				color: rgba(196, 196, 196, 0.42)
+				top: 20px
+				right: 0px
+		&-grid
+			flex-direction: column
+			margin-top: 40px
+			width: 84%
+			&_item
+				width: 100%
+				margin-top: 20px
+			&_title
+				font-size: 22px
+				margin-top: 20px
+			&_text
+				font-size: 18px
+				margin-top: 50px
+			&_btn
+				margin-top: 50px
+				width: 150px
+				height: 42px
+				line-height: 42px
+				text-transform: none
+				font-size: 14px
+				margin-bottom: 20px
+				padding: 0
+		&-background_web
+			font-size: 90px
+		&-background_sam
+			font-size: 90px
+	.process
+		padding-bottom: 40px
+		&-title
+			font-size: 32px
+			line-height: 40px
+			margin-bottom: 40px
+		&-block
+			&_num
+				margin-left: 10px
+				margin-right: 10px
+			&_number
+				font-size: 20px
+			&_text
+				font-size: 20px
+			&_stage
+				width: 50px
+				margin-right: 50px
+				font-size: 14px
+				&:last-child
+					margin-right: 0px
+
+				& .brifing
+					width: 50px
+					margin: 0 auto
+					margin-bottom: 10px
+				& .prototip
+					width: 50px
+					margin: 0 auto
+					margin-bottom: 10px
+				& .tz
+					width: 50px
+					margin: 0 auto
+					margin-bottom: 10px
+				& .pc
+					width: 50px
+					margin: 0 auto
+					margin-bottom: 10px
+				& .web
+					width: 50px
+					margin: 0 auto
+					margin-bottom: 10px
+				& .react
+					width: 50px
+					margin: 0 auto
+					margin-bottom: 10px
+				& .teaching
+					width: 50px
+					margin: 0 auto
+					margin-bottom: 10px
+				& .sdacha
+					width: 50px
+					margin: 0 auto
+					margin-bottom: 10px
+	.portfolio
+		padding-bottom: 60px
+		&-title
+			font-size: 32px
+		&-tabs
+			&-brake
+				display: block
+			&_title
+				span
+					width: 34px
+					height: 24px
+					font-size: 14px
+					line-height: 24px
+					top: -32px
+					&:after
+						top: 24px
+			&_list
+				width: auto
+				display: block
+				text-align: center
+				padding: 0 20px
+				margin-top: 30px
+				li
+					display: inline-block
+					position: relative
+					text-align: center
+					margin: 0 auto
+					padding: 2px 10px
+					font-size: 18px
+			&_item	
+				width: 100%
+				display: none
+				a
+					display: inline-block
+					height: 9%
+					img
+						display: block
+						width: 100%
+				&.active
+					display: flex
+					flex-direction: column
+			&_content
+				margin-top: 40px
+		&-more
+			margin-top: 50px
+			&_arrow
+				height: 34px
+				width: 3px
+				&:after
+					border-width: 0 1.7px 1.7px 0
+			&_text
+				font-size: 20px
+
+	.price
+		height: auto
+		padding-bottom: 40px
+		&-title
+			font-size: 32px
+			line-height: 40px
+		&-block
+			position: absolute
+			top: 170px
+			width: 100%
+			&_all
+				display: flex
+			&_item
+				display: flex
+				flex-direction: column
+				height: auto
+				padding: 20px 20px 20px 40px
+				background: rgba(255,255,255,0.72)
+				transition: .4s ease-in
+				&:hover
+					background: rgba(255,255,255,0.72)
+					transform: scale(1)
+    				box-shadow: 0px 0px 0px 100px #fff
+				&-description
+					&_mobile
+						transition: .3s ease-out
+						opacity: 0
+						height: 0px
+						width: 100%
+			&_third
+				background: rgba(255,19,0,0.62)
+				&:hover
+					background: rgba(255,19,0,0.62)
+					box-shadow: none
+			&_first-desc,
+			&_second-desc,
+			&_third-desc,
+			&_fourth-desc
+				display: none
+			&_first,
+			&_second,
+			&_third,
+			&_fourth
+				position: static
+				width: 100%
+			&_num
+				font-size: 20px
+				margin-right: 10px
+				line-height: 46px
+			&_text
+				font-size: 22px
+				line-height: 48px
+	#price-first_block
+		position: absolute
+		left: -9999px
+		opacity: 0
+	#price-first_block:checked + .price-block_item-description_mobile
+		margin-top: 20px
+		height: auto
+		transition: .3s ease-out
+		opacity: 1
+	#price-second_block
+		position: absolute
+		left: -9999px
+		opacity: 0
+	#price-second_block:checked + .price-block_item-description_mobile
+		margin-top: 20px
+		height: auto
+		transition: .4s ease-out
+		opacity: 1
+	#price-third_block
+		position: absolute
+		left: -9999px
+		opacity: 0
+	#price-third_block:checked + .price-block_item-description_mobile
+		margin-top: 20px
+		height: auto
+		transition: .4s ease-out
+		opacity: 1
+	#price-fourth_block
+		position: absolute
+		left: -9999px
+		opacity: 0
+	#price-fourth_block:checked + .price-block_item-description_mobile
+		margin-top: 20px
+		height: auto
+		transition: .4s ease-out
+		opacity: 1
+	.calc
+		display: flex
+		flex-direction: column
+		padding: 40px 20px
+		&-title
+			position: static
+			font-size: 32px
+			line-height: 40px
+		&-subtitle
+			position: static
+			font-size: 18px
+			line-height: 24px
+			margin-top: 10px
+		&-block
+			margin-left: 0
+			&_type
+				&:after
+					margin-left: -80px
+					width: 200%
+			&_icons
+				width: 40px
+				&-arrow
+					img
+						width: 24px
+						margin-left: 0
+						margin-right: 6px
+				&-search
+					img
+						margin-left: 0
+						width: 30px
+						margin-right: 4px
+				&-design
+					img
+						margin-left: 0
+						width: 24px
+						margin-right: 10px
+				&-setting
+					img
+						margin-left: 0
+						width: 26px
+						margin-right: 8px
+			&_item
+				margin-left: 20px
+				&-title
+					font-size: 18px
+				&-circle
+					width: 160px
+					margin-left: 40px
+					img
+						width: 160px
+				&-landing
+					position: absolute
+					top: -20px
+					right: -20px
+				&-mag
+					position: absolute
+					left: -40px
+					top: 40px
+				&-corporat
+					position: absolute
+					top: 120px
+					right: -60px
+				&-individual
+					position: absolute
+					top: -22px
+					right: -70px
+				&-wow
+					position: absolute
+					top: 45px
+					left: -35px
+				&-own
+					position: absolute
+					right: -54px
+					top: 120px
+				&-wp
+					position: absolute
+					top: -20px
+					right: -70px
+				&-cms
+					position: absolute
+					top: 40px
+					left: -40px
+				&-mail
+					position: absolute
+					top: 110px
+					right: -65px
+					width: 160px
+				&-text
+					font-size: 14px
+		&-label
+			font-size: 16px
+		&-price
+			margin-top: 40px
+			margin-left: 0
+			&_button
+				display: flex
+				justify-content: space-between
+				width: 320px
+				margin: 0 auto
+				margin-top: 20px
+			&_item
+				font-size: 18px
+			&_clear
+				width: 150px
+				height: 50px
+				font-size: 14px
+				padding: 10px
+				margin: 0
+				right: 24px
+				top: -16px
+			&_btn
+				width: 150px
+				height: 50px
+				font-size: 14px
+				padding: 10px
+	.send
+		&-title
+			margin: 0 auto
+			font-size: 32px
+			width: 90%
+			line-height: 38px
+		&-subtitle
+			font-size: 20px
+			width: 90%
+			margin: 0 auto
+			margin-top: 40px
+		&-btn
+			width: 170px
+			height: 50px
+			line-height: 46px
+			text-transform: none
+			font-size: 14px
+	.contact
+		padding-bottom: 40px
+		&-background_sam
+			display: none
+		&-background_web
+			display: none
+		&-title
+			font-size: 30px
+			width: 60%
+			padding: 10px
+			margin-top: 60px
+			margin-bottom: 20px
+		&-block
+			flex-direction: column
+		&-left
+			margin: 0 auto
+			margin-top: 20px
+			width: 90%
+			&_item
+				margin-bottom: 20px
+				&-title
+					font-size: 22px
+					text-align: center
+				&-text
+					text-align: center
+					font-size: 20px
+		&-right
+			margin-top: 20px
+			&_title
+				font-size: 22px
+				margin-bottom: 20px
+		&-form
+			
+			&_input
+				width: 80%
+				margin: 0 auto
+				font-size: 16px
+				padding: 10px 14px
+				margin-bottom: 10px
+			&_textarea
+				width: 80%
+				margin: 0 auto
+				font-size: 16px
+				padding: 10px 14px
+				margin-bottom: 10px
+				height: 150px
+			&_btn
+				width: 150px
+				height: 42px
+				margin-top: 20px
+				line-height: 43px
+				text-transform: none
+				font-size: 16px
+				padding: 0
+	.modal
+		&-window
+			width: 94%
+			height: 92%
+			padding: 20px 10px
+			overflow-y: scroll
+			&_title
+				margin-left: 0
+				margin-top: 10px
+				font-size: 30px
+				text-align: center
+			&_close
+				right: 0px
+				top: -24px
+				span
+					width: 20px
+			&_left
+				&-block
+					flex-direction: column
+				img
+					display: none
+		&-form
+			width: 100%
+			margin: 0 auto
+			margin-top: 16px
+			&_input
+				width: 300px
+				font-size: 14px
+				margin: 0 auto
+				margin-bottom: 10px
+			&_textarea
+				margin: 0 auto
+				width: 300px
+			&_btn
+				margin: 0 auto
+				margin-top: 10px
+				width: 150px
+				height: 42px
+				padding: 10px
+				font-size: 16px
+		.options-price
+			margin-top: 20px
+			&_item
+				font-size: 18px
+				width: 100%
+				padding: 6px
+			&_all
+				margin-top: 0
+	.footer
+		height: auto
+		flex-direction: column
+		&-right
+			font-size: 14px
+			text-align: center
+			margin-top: 20px
+		&-social
+			font-size: 30px
+			width: 34%
+			margin: 0 auto
+			a
+				img
+					width: 26px
+				&:first-child
+					img
+						width: 14px
+						margin-right: 6px
+		&-mail
+			text-align: center
+			font-size: 14px
+			margin-top: 10px
+			margin-bottom: 30px
+			line-height: 20px
+	
+@media (max-width: 360px)
+	.process
+		&-block
+			&_stage
+				width: 20px
+	.calc
+		display: flex
+		flex-direction: column
+		padding: 30px 10px
+		&-title
+			position: static
+			font-size: 28px
+			line-height: 36px
+		&-subtitle
+			position: static
+			font-size: 16px
+			line-height: 22px
+			margin-top: 10px
+		&-block
+			margin-left: 0
+			&_type
+				&:after
+					margin-left: -80px
+					width: 200%
+			&_icons
+				width: 40px
+				&-arrow
+					img
+						width: 24px
+						margin-left: 0
+						margin-right: 6px
+				&-search
+					img
+						margin-left: 0
+						width: 30px
+						margin-right: 4px
+				&-design
+					img
+						margin-left: 0
+						width: 24px
+						margin-right: 10px
+				&-setting
+					img
+						margin-left: 0
+						width: 26px
+						margin-right: 8px
+			&_item
+				margin-left: 20px
+				&-title
+					font-size: 16px
+					span
+						font-size: 14px
+				&-circle
+					width: 140px
+					margin-left: 40px
+					margin-top: 50px
+					img
+						width: 140px
+				&-landing
+					position: absolute
+					top: -30px
+					right: -10px
+				&-mag
+					position: absolute
+					left: -40px
+					top: 30px
+				&-corporat
+					position: absolute
+					top: 100px
+					right: -50px
+				&-individual
+					position: absolute
+					top: -26px
+					right: 20px
+					width: 100%
+				&-wow
+					position: absolute
+					top: 40px
+					left: 60px
+					width: 100%
+				&-own
+					position: absolute
+					right: 20px
+					width: 100%
+					top: 100px
+				&-wp
+					position: absolute
+					top: -24px
+					right: -40px
+				&-cms
+					position: absolute
+					top: 34px
+					left: -40px
+				&-mail
+					position: absolute
+					top: 100px
+					right: -65px
+					width: 160px
+				&-text
+					font-size: 13px
+		&-label
+			font-size: 16px
+		&-price
+			margin-top: 40px
+			margin-left: 0
+			&_button
+				display: flex
+				justify-content: space-between
+				width: 280px
+				margin: 0 auto
+				margin-top: 20px
+			&_item
+				font-size: 16px
+				padding: 6px
+			&_clear
+				width: 130px
+				height: 40px
+				font-size: 14px
+				padding: 7px
+				margin: 0
+			&_btn
+				width: 130px
+				height: 40px
+				font-size: 14px
+				padding: 7px
+	.modal
+		width: 100%
+		&-window
+			width: 300px
+			margin: 0 auto
+			padding: 20px 10px
+			overflow-y: scroll
+			&_title
+				margin-left: 0
+				margin-top: 10px
+				font-size: 24px
+				text-align: center
+			&_close
+				right: 0px
+				top: -24px
+				span
+					width: 16px
+					height: 2.5px
+			&_left
+				&-block
+					flex-direction: column
+				img
+					display: none
+		&-form
+			width: 100%
+			margin: 0 auto
+			margin-top: 16px
+			&_input
+				width: 250px
+				font-size: 14px
+				margin: 0 auto
+				margin-bottom: 10px
+			&_textarea
+				margin: 0 auto
+				width: 250px
+			&_btn
+				margin: 0 auto
+				margin-top: 10px
+				width: 140px
+				height: 40px
+				padding: 6px
+				font-size: 14px
+		.options-price
+			margin-top: 20px
+			margin-left: 10px
+			&_item
+				font-size: 18px
+				width: 100%
+				padding: 6px
+				font-size: 14px
+				span
+					font-size: 14px
+			&_all
+				margin-top: 0
+	.send
+		&-title
+			font-size: 28px
+			line-height: 36px
+		&-subtitle
+			font-size: 18px
+			line-height: 28px
+		&-btn
+			width: 150px
+			height: 40px
+			font-size: 12px
+			padding: 10px
+			line-height: 20px
+	.contact
+		&-title
+			font-size: 22px
+			line-height: 48px
+		&-left
+			&_item
+				&-title
+					font-size: 18px
+				&-text
+					font-size: 18px
+					margin-top: 6px
+		&-form
+			&_input
+				font-size: 14px
+			&_textarea
+				font-size: 14px
+			&_btn
+				width: 140px
+				height: 40px
+				font-size: 14px
+				line-height: 20px
+				margin-top: 10px

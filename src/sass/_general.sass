@@ -1,0 +1,1261 @@
+body 
+    scroll-behavior: smooth
+*
+    font-family: "Lato-Regular"
+  
+// HEADER
+
+.header
+	display: flex
+	min-height: 937px
+	position: relative
+	overflow: hidden
+	&-nav_mobile
+		display: none
+	&-left
+		width: 50%
+		&_animation
+			position: absolute
+			&-triangle
+				img
+					width: 50px
+					&:nth-child(1)
+						position: absolute
+						top: 980px
+						left: 200px
+						animation: tr1 60s linear 18s infinite
+						width: 40px
+					&:nth-child(2)
+						position: absolute
+						top: 300px
+						left: 780px
+						animation: tr2 60s linear infinite
+						width: 60px
+					&:nth-child(3)
+						position: absolute
+						top: 960px
+						right: -700px
+						animation: tr3 50s linear 40s infinite
+						width: 50px
+			&-ellipse
+				img
+					width: 50px
+					&:nth-child(1)
+						position: absolute
+						top: -50px
+						left: 800px
+						animation: ell1 80s linear 50s infinite
+						width: 45px
+					&:nth-child(2)
+						position: absolute
+						top: 400px
+						left: -50px
+						animation: ell2 70s linear infinite
+						width: 55px
+					&:nth-child(3)
+						position: absolute
+						top: 960px
+						right: -400px
+						animation: ell3 50s linear infinite
+						width: 53px
+			&-square
+				img
+					width: 50px
+					&:nth-child(1)
+						position: absolute
+						top: 200px
+						left: -50px
+						animation: rec1 60s linear 5s infinite
+						width: 35px
+					&:nth-child(2)
+						position: absolute
+						top: 500px
+						left: -100px
+						animation: rec2 80s linear 40s infinite
+						width: 65px
+					&:nth-child(3)
+						position: absolute
+						top: 800px
+						left: 850px
+						animation: rec3 70s linear infinite
+						width: 53px
+	@keyframes tr1
+		0%
+			transform: translateY(0)
+		100%
+			transform: translateY(-960px) translateX(10px) rotate(-270deg)
+	@keyframes tr2
+		0%
+			transform: translateY(0)
+		100%
+			transform: translateY(-600px) translateX(-350px) rotate(270deg)
+	@keyframes tr3
+		0%
+			transform: translateY(0)
+		100%
+			transform: translateY(-1000px) translateX(0px) rotate(-360deg)
+	@keyframes rec1
+		0%
+			transform: translateY(0)
+		100%
+			transform: translateY(200px) translateX(920px) rotate(190deg)
+	@keyframes rec2
+		0%
+			transform: translateY(0)
+		100%
+			transform: translateY(-780px) translateX(650px) rotate(270deg)
+	@keyframes rec3
+		0%
+			transform: translateY(0)
+		100%
+			transform: translateY(-900px) translateX(-10px) rotate(410deg)
+	@keyframes ell1
+		0%
+			transform: translateY(0)
+		100%
+			transform: translateY(900px) translateX(0px) rotate(190deg)
+	@keyframes ell2
+		0%
+			transform: translateY(0)
+			opacity: 0
+		1%
+			opacity: 1
+		100%
+			transform: translateY(-400px) translateX(100px) rotate(-400deg)
+	@keyframes ell3
+		0%
+			transform: translateY(0)
+		100%
+			transform: translateY(-600px) translateX(-300px) rotate(360deg)
+	&-logo
+		margin-left: 200px
+		margin-top: 84px
+		img
+			width: 200px
+	&-slider
+		margin-top: 180px
+		margin-left: 200px
+		&_title
+			text-align-last: left
+			font-size: 70px
+			line-height: 74px
+			text-transform: uppercase
+		&_text
+			margin-top: 100px
+			font-size: 36px
+			line-height: 44px
+		.slick-dots
+			display: flex
+			li
+				list-style: none
+				button
+					border: none
+					background: transparent
+					outline: none
+					font-size: 24px
+					margin-right: 15px
+					color: $redColor
+					font-family: Lato-Bold
+					margin-top: 82px
+					cursor: pointer
+					&:before
+						content: '0'
+			&:after
+				content: ''
+				background: url('../img/header-arrow.png') 
+				height: 16px
+				width: 161px
+				margin-top: 88px
+				margin-left: 10px
+		.slick-active
+			button
+				color: #000 !important
+                    
+	&-right
+		position: relative
+		background: url('../img/header-bg1.jpg') center center/cover no-repeat
+		height: auto
+		width: 50%
+		&_play
+			background: #ffffff
+			width: 120px
+			height: 120px
+			border-radius: 50%
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-30%, -50%)
+			&-btn
+				width: 0
+				height: 0
+				display: inline-block
+				border: 40px solid transparent
+				position: relative
+				color: #000
+				&:after
+					content: ''
+					position: absolute
+					top: -2px
+					left: 11px
+					border: 25px solid transparent
+					border-left: 35px solid black
+					cursor: pointer
+		&_text
+			position: absolute
+			right: -250px
+			font-size: 23px
+			top: 50%
+			transform: rotate(-90deg) translateY(-50%)
+			color: #fff
+		&_button
+			position: absolute
+			cursor: pointer
+			bottom: 50px
+			right: 290px
+			border: none
+			font-size: 24px
+			padding: 10px 30px
+			border-radius: 4px
+	&-menu
+		display: flex
+		position: absolute
+		right: 208px
+		top: 90px
+		&_item
+			margin-right: 56px
+			font-family: Lato-Medium
+			font-size: 24px
+			line-height: 40px
+			cursor: pointer
+			color: #ffffff    
+	&-humburger
+		height: 39px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		cursor: pointer
+		span
+			display: block
+			width: 50px
+			height: 3.4px
+			background: #fff
+
+.menu
+    background: #000
+    display: flex
+    padding: 65px 0
+    position: absolute
+    right: -100%
+    height: 100vh
+    width: 100%
+    z-index: 10
+    transition: 1s ease-out
+    &-logo
+        position: absolute
+        left: 200px
+        top: 65px
+        img
+            width: 260px
+    &-close
+        position: absolute
+        right: 200px
+        top: 95px
+        height: 40px
+        cursor: pointer
+        span
+            display: block
+            width: 50px
+            height: 3.4px
+            background: #fff
+            margin-top: 20px
+            &:nth-child(even)
+                transform: rotate(45deg)
+                margin-top: -4px
+            &:nth-child(odd)
+                transform: rotate(-45deg)
+            
+    &-left
+        width: 40%
+        margin-top: 240px  
+        margin-left: 200px
+        &_item
+            margin-bottom: 80px
+            &-title
+                font-size: 36px
+                color: #fff
+                font-family: Gilroy-Light
+            &-text
+                font-size: 36px
+                color: #fff
+                font-family: Gilroy-Light
+                margin-top: 10px
+                a
+                    color: #fff
+                    text-decoration: none
+            &-social
+                a
+                    margin-right: 30px
+                    &:nth-child(1)
+                        img
+                            width: 14px
+                    img
+                        width: 26px
+                        height: auto
+    &-right
+        width: 60%
+        margin-top: 230px  
+    &-list
+        display: flex
+        flex-direction: column
+        a
+            color: #fff
+            width: auto
+            font-family: Gilroy-ExtraBold
+            text-decoration: none
+            font-size: 64px
+            transition: .4s ease
+            &:hover
+                transition: .4s ease
+                color: #000
+                -webkit-text-stroke: 0.9px rgba(255, 255, 255, 0.7)
+
+
+.modal
+	background: rgba(0, 0, 0, .7)
+	height: 100vh
+	width: 100%
+	position: fixed
+	top: 0
+	z-index: 1000
+	opacity: 0
+	transition: .5s
+	z-index: -1
+	&-window
+		background: #fff
+		width: 1300px
+		height: 600px
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		&_title
+			font-size: 32px
+			margin-top: 40px
+			margin-left: 280px
+			font-family: Gilroy-ExtraBold
+		&_left
+			position: relative
+			&-block
+				display: flex
+			&-img
+				position: absolute
+				display: block
+				right: 0
+				top: 30px
+				width: 510px
+		&_close
+			position: absolute
+			right: 20px
+			top: -20px
+			height: 40px
+			cursor: pointer
+			span
+				display: block
+				width: 40px
+				height: 3.4px
+				background: #464343
+				margin-top: 20px
+				&:nth-child(even)
+					transform: rotate(45deg)
+					margin-top: -4px
+				&:nth-child(odd)
+					transform: rotate(-45deg)
+		&_options
+			.options-price
+				margin-top: 60px
+				margin-left: 40px
+				position: relative
+				&_item
+					color: $redColor
+					font-size: 24px
+					padding: 10px
+					display: flex
+					color: $redColor
+					width: 380px
+					span
+						margin-left: 14px
+						margin-right: 5px
+						color: #000
+				&_all
+					color: #000
+					margin-top: 20px
+				&_cms
+					&-options
+						display: flex
+						flex-direction: column
+						margin-left: 0
+						span
+							margin-left: 0
+				&_btn
+					background: $redColor
+					width: 200px
+					color: #ffffff
+					font-size: 24px
+					padding: 20px 20px
+					text-align: center
+					border-radius: 4px
+					line-height: 22px
+					border: none
+					cursor: pointer
+					outline: none
+				&_clear
+					position: absolute
+					top: -14px
+					right: 40px
+					height: 24px
+					cursor: pointer
+					span
+						display: block
+						width: 20px
+						height: 3.4px
+						background: #464343
+						margin-top: 10px
+						&:nth-child(even)
+							transform: rotate(45deg)
+							margin-top: -3px
+						&:nth-child(odd)
+							transform: rotate(-45deg)
+	&-form
+		width: 320px
+		display: flex
+		flex-direction: column
+		margin-top: 50px
+		margin-left: 70px
+		&_input
+			width: 320px
+			font-size: 16px
+			padding: 10px 20px
+			border: 1px solid #000
+			margin-bottom: 20px
+			outline: none
+		&_textarea
+			width: 320px
+			height: 150px
+			font-size: 16px
+			padding: 10px 20px
+			resize: none
+			border: 1px solid #000
+			outline: none
+		&_btn
+			width: 200px
+			margin-left: 80%
+			margin-top: 40px
+			padding: 12px 20px
+			border-radius: 4px
+			border: none
+			background: $redColor
+			color: #ffffff
+			font-size: 20px
+			cursor: pointer
+
+.visibility-on
+	opacity: 1
+	transition: all .5s
+	z-index: 1000
+
+.visibility-off
+	opacity: 0
+	transition: all .5s
+	z-index: -1
+    // Услуги
+    
+.services
+	padding-top: 120px
+	padding-bottom: 120px
+	position: relative
+	&-background_web
+		position: absolute
+		font-size: 340px
+		font-family: Gilroy-ExtraBold
+		color: rgba(196, 196, 196, 0.42)
+		top: 120px
+		left: 60px
+		&-mobile
+			display: none
+	&-background_sam
+		position: absolute
+		font-size: 340px
+		font-family: Gilroy-ExtraBold
+		color: rgba(196, 196, 196, 0.42)
+		bottom: 80px
+		right: 10px
+		&-mobile
+			display: none
+	&-title
+		font-size: 40px
+	&-grid
+		position: relative
+		margin: 0 auto
+		margin-top: 80px
+		display: flex
+		justify-content: space-between
+		width: 78%
+		&_item
+			position: relative
+			text-align: center
+			padding: 40px 30px 20px 30px
+			width: 430px
+			height: auto
+			background: transparent
+			border: 2px solid #999999
+			justify-self: center
+
+		&_title
+			font-size: 26px
+			letter-spacing: 0.06em
+			margin-top: 26px
+			font-family: Lato-Medium
+			position: relative
+			border-bottom: 2px solid red
+			display: inline-block
+			padding-bottom: 4px
+			&:after
+				content: ''
+		&_text
+			font-size: 24px
+			margin-top: 90px    
+		&_btn
+			width: 180px
+			height: 50px
+			background-color: $redColor
+			font-size: 16px
+			color: #ffffff
+			margin: 0 auto
+			border: none
+			text-transform: uppercase
+			margin-top: 100px
+			margin-bottom: 40px 
+			line-height: 49px
+			border-radius: 4px
+			letter-spacing: 0.05em
+			cursor: pointer
+			outline: none
+			box-shadow: 8px 8px 20px -10px $redColor
+			&-black
+				background-color: #000
+				border: 2px solid #000
+				color: #fff
+				line-height: 46px
+				box-shadow: 8px 8px 25px -10px #000
+
+	// Процесс создания сайта
+
+.process
+	padding-bottom: 80px
+	&-title
+		margin-bottom: 50px
+	&-block
+		background: url('../img/process-bg.jpg') center center/cover no-repeat
+		display: flex
+		flex-direction: column
+		padding: 100px 0 0 0 
+		&_item
+			display: flex
+			margin-bottom: 100px
+		&_num
+			margin-left: 300px
+			margin-right: 200px
+		&_number
+			font-size: 150px
+			font-family: Lato-Black
+			color: transparent
+			-webkit-text-stroke: 3px rgba(255, 255, 255, 1)
+			line-height: 120px
+		&_text
+			font-size: 60px
+			font-family: Lato-Thin
+			color: #fff
+			text-align: right
+		&_stage
+			display: flex
+			flex-direction: column
+			text-align: center
+			margin-right: 120px
+			font-size: 22px
+			width: 250px
+			color: #ffffff
+			&:last-child
+				margin-right: 300px
+			.brifing
+				width: 160px
+				margin: 0 auto
+				margin-bottom: 10px
+			.prototip
+				width: 140px
+				margin: 0 auto
+				margin-bottom: 10px
+			.tz
+				width: 70px
+				margin: 0 auto
+				margin-bottom: 10px
+			.pc
+				width: 170px
+				margin: 0 auto
+				margin-bottom: 10px
+			.web
+				width: 160px
+				margin: 0 auto
+				margin-bottom: 10px
+			.react
+				width: 130px
+				margin: 0 auto
+				margin-bottom: 10px
+			.teaching
+				width: 180px
+				margin: 0 auto
+				margin-bottom: 10px
+			.sdacha
+				width: 170px
+				margin: 0 auto
+				margin-bottom: 10px
+
+	// Наши работы
+
+.portfolio
+	padding-bottom: 80px
+	&-tabs_item.active
+		display: grid
+	&-tabs
+		&_title
+			cursor: pointer
+			position: relative
+			span
+				display: none
+				position: absolute
+				width: 50px
+				height: 32px
+				top: -46px
+				left: 50%
+				color: #fff
+				border-radius: 4px
+				text-align: center
+				transform: translateX(-50%)
+				background: $redColor
+				transition: 1s ease !important
+				&:after
+					content: ''
+					position: absolute
+					top: 30px
+					left: 50%
+					transform: translateX(-50%)
+					border-style: solid
+					border-width: .5em .3em .3em .3em
+					border-color: $redColor transparent transparent transparent
+
+			&.active
+				color: $redColor
+		&_list
+			display: flex
+			margin: 0 auto
+			justify-content: space-between
+			font-size: 24px
+			margin-top: 70px
+			width: 1200px
+			li
+				list-style: none
+		&_content
+			margin-top: 80px
+		&_item
+			width: 1500px
+			margin: 0 auto
+			display: grid
+			grid-template-columns: 1fr 1fr 1fr
+			grid-gap: 40px
+			a
+				display: block
+		&_item
+			display: none
+	&-more
+		margin: 0 auto
+		margin-top: 60px
+		width: 100px
+		&_arrow
+			width: 4px
+			height: 60px
+			background: #000
+			position: relative
+			margin: 0 auto
+			&:after
+				content: ''
+				position: absolute
+				border: solid black
+				border-width: 0 3px 3px 0
+				display: inline-block
+				padding: 6px
+				transform: rotate(45deg)
+				bottom: 0
+				left: -5px
+		&_text
+			font-size: 24px
+			margin-top: 20px
+			text-align: center
+			font-family: Lato-Bold
+			cursor: pointer
+
+    // Фомрирование стоимости сайта
+
+.price
+	width: 100%
+	position: relative
+	overflow: hidden
+	background: #464343
+	padding-top: 50px
+	height: 760px
+	#price-first_block
+		position: absolute
+		left: -99999px
+		opacity: 0
+	#price-second_block
+		position: absolute
+		left: -99999px
+		opacity: 0
+	#price-third_block
+		position: absolute
+		left: -99999px
+		opacity: 0
+	#price-fourth_block
+		position: absolute
+		left: -99999px
+		opacity: 0
+	&-title
+		color: #ffffff
+	&-background
+		position: relative
+		&_text
+			font-family: Gilroy-ExtraBold
+			font-size: 44px
+			color: #000
+			margin-top: -80px
+		&_web
+			margin-top: 60px
+			span
+				display: inline-block
+				width: 260px
+		&_des
+			margin-top: 80px
+			span
+				display: inline-block
+				width: 260px
+		&_anim
+			margin-top: 80px
+			span
+				display: inline-block
+				width: 260px
+		&_html
+			position: absolute
+			display: flex
+			right: 0px
+			top: -110px
+			width: 100%
+			font-size: 44px
+			transition: 1s ease
+			animation: html-key 15s linear infinite
+			span
+				display: block
+				width: 260px
+		&_left
+			display: flex
+			
+			margin-top: 150px
+			width: 100%
+			span
+				display: inline-block
+				width: 260px
+	&-block
+		display: flex
+		flex-direction: column
+		&_all
+			display: flex
+		
+		&_item
+			width: 600px
+			height: 100px
+			display: flex
+			background: rgba(255, 255, 255, 0.52)
+			padding: 20px 60px
+			cursor: pointer
+			transition: .5s ease
+			&:hover
+				background: rgba(255, 255, 255, 0.9)
+				transform: scale(1.08)
+				box-shadow: 0px 0px 20px -10px #fff
+			&-description
+				color: #ffffff
+				&_mobile
+					opacity: 0
+					width: 0
+		&_num
+			font-size: 44px
+			color: #000	
+			margin-right: 60px
+		&_text
+			font-size: 34px
+			line-height: 54px
+			&-fifth
+				color: #fff
+		&_first
+			position: absolute
+			right: 230px
+			top: 160px
+			&-desc
+				position: absolute
+				right: 1200px
+				top: 160px
+				height: auto
+				text-align: center
+				background: rgba(0, 0, 0, .52)
+				color: #ffffff
+				opacity: 0
+		&_second
+			position: absolute
+			right: 470px
+			top: 300px
+			&-desc
+				position: absolute
+				right: 1200px
+				top: 160px
+				height: auto
+				text-align: center
+				background: rgba(0, 0, 0, .52)
+				color: #ffffff
+				opacity: 0
+		&_third
+			position: absolute
+			right: 720px
+			top: 440px
+			background: rgba(256, 19, 0, 0.52)
+			transition: .5s ease
+			&:hover
+				background: rgba(256, 19, 0, 0.86)
+				transform: scale(1.03)
+				box-shadow: 0px 0px 20px -10px $redColor
+			&-desc
+				position: absolute
+				right: 50px
+				top: 440px
+				height: auto
+				text-align: center
+				background: rgba(0, 0, 0, .52)
+				color: #ffffff
+				opacity: 0
+		&_fourth
+			position: absolute
+			right: 950px
+			top: 580px
+			&-desc
+				position: absolute
+				right: 50px
+				top: 440px
+				height: auto
+				text-align: center
+				background: rgba(0, 0, 0, .52)
+				color: #ffffff
+				opacity: 0
+		&_six
+			width: 120px
+			background: #fff
+			height: 8px
+			padding: 0
+			position: absolute
+			right: 560px
+			top: 480px
+			&-arrow
+				position: absolute
+				border: solid #fff
+				border-width: 8px 8px 0px 0
+				display: inline-block
+				padding: 6px
+				transform: rotate(45deg)
+				top: -6px
+				right: -5px
+
+
+@keyframes html-key
+	0%	
+		transform: translateX(101%)
+	100%
+		transform: translateX(-101%)
+
+	
+
+@keyframes left-two 
+	0% 
+		transform:translateX(100%)
+	
+	50% 
+		transform:translateX(100%)
+	
+	60% 
+		transform:translateX(0)
+	
+	90% 
+		transform:translateX(0)
+
+	100%
+		transform:translateX(-100%)
+	
+	// Калькулятор стоимости сайта
+
+.calc
+	background: #000000
+	padding: 50px 0 70px 0
+	position: relative
+	display: flex
+	&-radio
+		position: absolute
+		z-index: -100
+		opacity: 0
+		
+		&:checked+.calc-label
+			background: url('../img/check.png') center center/cover no-repeat
+			background-size: 12px 12px
+	&-label
+		display: inline-flex
+		user-select: none
+		cursor: pointer
+	&-label
+		display: inline-block
+		width: 1.1em
+		height: 1.1em
+		flex-shrink: 0
+		flex-grow: 0
+		border: 1px solid #464343
+		border-radius: 2px
+		margin-right: 0.5em
+		background: url('../img/plus.png') center center/cover no-repeat
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: 10px 10px
+	&-title
+		color: #ffffff
+		position: absolute
+		right: 150px
+	&-subtitle
+		font-size: 24px
+		color: #ffffff
+		font-family: Gilroy-Light
+		position: absolute
+		right: 150px
+		top: 100px
+		z-index: 10
+	&-block
+		margin-left: 200px
+		margin-right: 200px
+		margin-top: 50px
+		display: flex
+		flex-direction: column
+		z-index: 1
+		&_type
+			position: relative
+			display: flex
+			height: 320px
+			&:nth-child(2)
+				.calc-block_item-title
+					margin-top: 20px
+			&:nth-child(3)
+				height: 300px
+				.calc-block_item-title
+					margin-top: 20px
+				&:after
+					display: none
+			&:after
+				content: ''
+				position: absolute
+				width: 550px
+				height: 1px
+				background: #ccc
+				left: 150px
+				bottom: 0
+		&_icons
+			width: 100px
+			border-right: 2px solid #cccccc
+			&-search
+				img
+					width: 44px
+					margin-left: 10px
+			&-design
+				margin-top: 20px
+				img
+					margin-left: 14px
+					width: 34px
+			&-setting
+				margin-top: 20px
+				img
+					margin-left: 10px
+					width: 44px
+			&-arrow
+				margin-top: 120px
+				img
+					width: 34px
+					margin-left: 16px
+		&_item
+			margin-left: 50px
+			&-title
+				display: flex
+				flex-direction: column
+				color: #ffffff
+				font-size: 24px
+				span
+					color: $redColor
+					font-size: 18px
+					margin-bottom: 5px
+			&-circle
+				margin-top: 30px
+				margin-left: 150px
+				position: relative
+				img
+					width: 180px
+			&-landing
+				position: absolute
+				top: -20px
+				right: -80px
+			&-mag
+				position: absolute
+				left: -100px
+				top: 50px
+			&-corporat
+				position: absolute
+				top: 130px
+				right: -160px
+			&-individual
+				position: absolute
+				top: -20px
+				right: -204px
+			&-wow
+				position: absolute
+				top: 45px
+				left: -155px
+			&-own
+				position: absolute
+				right: -124px
+				top: 130px
+			&-wp
+				position: absolute
+				top: -15px
+				right: -170px
+			&-cms
+				position: absolute
+				top: 50px
+				left: -140px
+			&-mail
+				position: absolute
+				top: 135px
+				right: -245px
+			&-text
+				color: #ffffff
+				font-size: 22px
+				background: #000000
+				padding: 5px 5px 10px 5px
+				border-radius: 10px
+				span
+					color: $redColor
+	&-price
+		margin-top: 400px
+		margin-left: 400px
+		&_item
+			color: #ffffff
+			font-size: 26px
+			padding: 10px
+			display: flex
+			color: $redColor
+			span
+				margin-left: 14px
+				margin-right: 5px
+				color: #ffffff
+		&_all
+			color: #ffffff
+		&_cms
+			&-options
+				display: flex
+				flex-direction: column
+				margin-left: 0
+				span
+					margin-left: 0
+		&_btn
+			background: $redColor
+			width: 200px
+			color: #ffffff
+			font-size: 24px
+			padding: 20px 20px
+			text-align: center
+			border-radius: 4px
+			line-height: 22px
+			border: none
+			cursor: pointer
+			outline: none
+		&_clear
+			margin-top: 20px
+			background: #000000
+			border: 2px solid $redColor
+			margin-bottom: 20px
+			margin-right: 10px
+
+    // Не определились с сайтом
+
+.send
+	background: url('../img/send.jpg') center center/cover no-repeat
+	height: auto
+	padding-bottom: 80px
+	&-title
+		padding-top: 90px
+		text-align: left
+		font-size: 56px
+		color: #ffffff
+		width: 50%
+		margin-left: 400px
+		line-height: 60px
+	&-subtitle
+		margin-top: 60px
+		font-size: 22px
+		color: #ffffff
+		text-align: center
+		line-height: 30px
+	&-btn
+		width: 220px
+		height: 60px
+		background-color: #FF0000
+		font-size: 16px
+		color: #ffffff
+		text-align: center
+		margin: 0 auto
+		text-transform: uppercase
+		margin-top: 40px
+		line-height: 50px
+		border-radius: 4px
+		line-height: 60px
+		letter-spacing: 0.05em
+		cursor: pointer
+		box-shadow: 8px 10px 12px -10px $redColor
+
+
+
+.contact
+	padding-bottom: 100px
+	position: relative
+	&-block
+		display: flex
+	&-title
+		background: #000000
+		padding: 60px
+		width: 680px
+		margin-top: 84px
+		color: #fff
+	&-background_web
+		position: absolute
+		font-size: 340px
+		font-family: Gilroy-ExtraBold
+		color: rgba(196, 196, 196, 0.42)
+		top: 170px
+		left: 70px
+		z-index: -1
+	&-background_sam
+		position: absolute
+		font-size: 340px
+		font-family: Gilroy-ExtraBold
+		color: rgba(196, 196, 196, 0.42)
+		bottom: -51px
+		right: 10px
+		z-index: -1
+	&-left
+		width: 40%
+		margin-top: 150px  
+		margin-left: 200px
+		&_item
+			margin-bottom: 80px
+			&-title
+				font-size: 36px
+				color: #000
+				font-family: Gilroy-Light
+			&-text
+				font-size: 36px
+				color: #000
+				font-family: Gilroy-Light
+				margin-top: 10px
+			a
+				color: $redColor
+				text-decoration: none
+		&-social
+			a
+				margin-right: 30px
+				&:nth-child(1)
+					img
+						width: 14px
+				img
+					width: 26px
+					height: auto
+	&-right
+		margin-top: -100px
+		&_title
+			font-size: 36px
+			text-align: center
+			margin-bottom: 40px
+	&-form
+		display: flex
+		flex-direction: column
+		&_input
+			padding: 14px 20px
+			font-size: 24px
+			border: 1px solid #000
+			margin-bottom: 40px
+			width: 500px
+			outline: none
+		&_textarea
+			height: 270px
+			padding: 14px 20px
+			font-size: 24px
+			resize: none
+			border: 1px solid #000000
+			outline: none
+			background: rgba(255, 255, 255, .3)
+		&_btn
+			width: 200px
+			background: $redColor
+			padding: 20px 10px
+			margin: 0 auto
+			margin-top: 40px
+			border: none
+			font-size: 24px
+			color: #fff
+			border-radius: 4px
+.footer
+	display: flex
+	margin: 0 auto
+	justify-content: space-around
+	width: 100%
+	height: 140px
+	background: #000000
+	&-right
+		color: #ffffff
+		font-size: 24px
+		line-height: 50px
+		margin-top: 42px
+	&-social
+		display: flex
+		width: 11%
+		justify-content: space-around
+		font-size: 50px
+		margin-top: 36px
+		color: #ffffff
+		a
+			color: #ffffff
+			&:nth-child(1)
+				img
+					width: 18px
+			img
+				width: 30px
+				
+	&-mail
+		font-size: 24px
+		margin-top: 42px
+		color: #ffffff
+		line-height: 50px
