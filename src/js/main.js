@@ -52,17 +52,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }); 
 
             // Гамбургер меню (Готово)
-
-            const hamburgerIcon = document.querySelector('.header-humburger');
+            
+            const hamburgerIcon = document.querySelectorAll('.header-humburger');
             const hamburgerMenu = document.querySelector('.menu');
             const closeBtn = document.querySelector('.menu-close'); 
-            hamburgerIcon.addEventListener('click', () => {
-                document.body.style.overflow = 'hidden';
-                hamburgerMenu.style.right = '0';
-            });
+            hamburgerIcon.forEach((e) => {
+                e.addEventListener('click', () => {
+                    document.body.style.overflow = 'hidden';
+                    hamburgerMenu.style.transform = 'translateX(0)';
+                });
+            })
             closeBtn.addEventListener('click', () => {
-                hamburgerMenu.style.right = '-100%';
+                hamburgerMenu.style.transform = 'translateX(100%)';
                 document.body.style.overflow = 'auto';
+                document.body.style.overflowX = 'hidden';
             });
             
             // Портфолио(табы) (Готово)
