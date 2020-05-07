@@ -1,8 +1,17 @@
-@media (max-width: 1366px)
+@media (min-width: 1680px) and (max-width: 1900px)
+	.header
+		&-menu
+			right: 160px
+			top: 90px
+			&_item
+				font-size: 24px
+				margin-right: 40px
+				line-height: 30px
+@media (min-width: 1200px) and (max-width: 1680px)
 	.header
 		min-height: auto
 		&-right
-			height: 100vh
+			height: auto
 			&_text
 				font-size: 18px
 				right: -200px
@@ -36,7 +45,8 @@
 			margin-top: 60px
 		&-slider
 			margin-left: 140px
-			margin-top: 140px		
+			margin-top: 140px
+			padding-bottom: 100px		
 			&_title
 				line-height: 56px
 				font-size: 48px	
@@ -44,6 +54,7 @@
 				font-size: 26px
 				line-height: 30px
 				margin-top: 50px
+				margin-right: 20px
 			.slick-dots
 				li
 					button
@@ -55,19 +66,22 @@
 					background-size: 100px 14px
 					margin-left: -20px
 	.services
+		padding-top: 40px
+		padding-bottom: 60px
 		&-background_sam
 			font-size: 200px
 			bottom: 90px
 			right: 50px
 		&-background_web
 			font-size: 200px
-			top: 200px
+			top: 60px
 			left: 130px
 		&-title
-			font-size: 32px
+			h3
+				font-size: 32px
 		&-grid
-			width: 86%
-			margin-top: 50px
+			width: 1200px
+			margin-top: 30px
 			&_item
 				width: 340px
 				padding: 34px 20px 0 20px
@@ -82,6 +96,63 @@
 				font-size: 14px
 				line-height: 45px
 				margin-top: 60px
+	.process
+		&-title
+			font-size: 34px
+			margin-bottom: 30px
+		&-block
+			padding-top: 60px
+			&_num
+				margin-left: 140px
+				margin-right: 140px
+			&_number
+				font-size: 100px
+				line-height: 100px
+			&_text
+				font-size: 40px
+				line-height: 32px
+			&_stage
+				display: flex
+				flex-direction: column
+				text-align: center
+				margin-right: 80px
+				font-size: 20px
+				width: 300px
+				color: #ffffff
+				&:last-child
+					margin-right: 100px
+				.brifing
+					width: 140px
+					margin: 0 auto
+					margin-bottom: 10px
+				.prototip
+					width: 110px
+					margin: 0 auto
+					margin-bottom: 10px
+				.tz
+					width: 60px
+					margin: 0 auto
+					margin-bottom: 10px
+				.pc
+					width: 140px
+					margin: 0 auto
+					margin-bottom: 10px
+				.web
+					width: 140px
+					margin: 0 auto
+					margin-bottom: 10px
+				.react
+					width: 110px
+					margin: 0 auto
+					margin-bottom: 10px
+				.teaching
+					width: 140px
+					margin: 0 auto
+					margin-bottom: 10px
+				.sdacha
+					width: 130px
+					margin: 0 auto
+					margin-bottom: 10px
 	.portfolio
 		padding-bottom: 50px
 		&-title
@@ -91,6 +162,16 @@
 				margin-top: 50px
 				width: 70%
 				font-size: 20px
+			&_title
+				span
+					width: 44px
+					height: 28px
+					font-size: 17px
+					line-height: 26px
+					top: -38px
+					&:after
+						top: 28px
+						border-width: .4em .2em .4em .2em
 			&_content
 				margin-top: 50px
 			&_item
@@ -109,6 +190,9 @@
 		height: 630px
 		&-title
 			font-size: 38px
+		&-background
+			&_left
+				margin-top: 90px
 		&-block
 			&_item
 				width: 500px
@@ -117,19 +201,214 @@
 				font-size: 34px
 				margin-right: 30px
 			&_text
-				font-size: 28px
+				font-size: 24px
 				line-height: 44px
 			&_first
 				right: 170px
+				&-desc
+					right: 0
+					left: 100px
+					height: auto
+					font-size: 20px
+					width: 300px
+					padding: 14px
 			&_second
 				right: 410px
 				top: 270px
+				&-desc
+					right: 0
+					left: 100px
+					height: auto
+					font-size: 20px
+					width: 300px
+					padding: 14px
 			&_third
 				right: 550px
 				top: 380px
+				&-desc
+					right: 150px
+					height: auto
+					top: 380px
+					font-size: 20px
+					width: 300px
+					padding: 14px
 			&_fourth
 				right: 720px
 				top: 490px
+				&-desc
+					right: 150px
+					height: auto
+					top: 380px
+					font-size: 20px
+					width: 300px
+					padding: 14px
+	.calc
+		&-title
+			font-size: 36px
+		&-subtitle
+			font-size: 20px
+			top: 90px
+		&-block
+			margin-left: 100px
+			margin-top: 100px
+			&_type
+				height: 300px
+			&_icons
+				width: 60px
+				&-search
+					img
+						width: 36px
+				&-design
+					img
+						width: 28px
+				&-setting
+					img
+						width: 34px
+				&-arrow
+					img
+						width: 26px
+			&_item
+				&-title
+					font-size: 20px
+					span
+						font-size: 16px
+				&-circle
+					margin-left: 130px
+					margin-top: 50px
+					img
+						width: 150px
+				&-text
+					font-size: 18px
+				&-landing
+					position: absolute
+					top: -20px
+					right: -50px
+				&-mag
+					position: absolute
+					left: -120px
+					top: 40px
+				&-corporat
+					position: absolute
+					top: 110px
+					right: -130px
+				&-individual
+					position: absolute
+					top: -22px
+					right: -140px
+				&-wow
+					position: absolute
+					top: 40px
+					left: -130px
+				&-own
+					position: absolute
+					right: -94px
+					top: 110px
+				&-wp
+					position: absolute
+					top: -30px
+					right: -120px
+				&-cms
+					position: absolute
+					top: 40px
+					left: -120px
+				&-mail
+					position: absolute
+					top: 120px
+					right: -215px
+					width: 300px
+		&-price
+			margin-left: 200px
+			margin-top: 400px
+			&_item
+				font-size: 22px
+			&_button
+			&_clear	
+				width: 160px
+				font-size: 18px
+				padding: 14px
+			&_btn
+				width: 160px
+				font-size: 18px
+				padding: 14px
+	.send
+		padding-bottom: 60px
+		&-title
+			margin-left: 200px
+			font-size: 40px
+			line-height: 50px
+			padding-top: 60px
+		&-subtitle
+			font-size: 20px
+			margin-top: 50px
+		&-btn
+			width: max-content
+			font-size: 14px
+			padding: 20px
+			line-height: 24px
+	.contact
+		padding-bottom: 60px
+		&-title
+			padding: 34px
+			width: 520px
+			margin-top: 70px
+			font-size: 42px
+		&-background_sam
+			font-size: 240px
+			bottom: 14px
+			right: 36px
+		&-left
+			margin-top: 100px
+			margin-left: 150px
+			&_item
+				margin-bottom: 80px
+				&-title
+					font-size: 30px
+				&-text
+					font-size: 30px
+		&-background_web
+			font-size: 240px
+			top: 140px
+			left: 110px
+		&-right
+			&_title
+				font-size: 28px
+		&-form
+			&_input
+				padding: 14px 16px
+				font-size: 18px
+				border: 1px solid #000
+				margin-bottom: 28px
+				width: 420px
+			&_textarea
+				font-size: 18px
+				padding: 14px 16px
+				height: 180px	
+	.footer
+		height: 120px
+		&-right
+			font-size: 20px
+			margin-top: 34px
+		&-social
+			margin-top: 30px
+			a
+				&:nth-child(1)
+					img
+						width: 14px
+						margin-right: 4px
+				img
+					width: 24px
+		&-mail
+			margin-top: 34px
+			font-size: 20px
+@media (min-width: 1200px) and (max-width: 1400px)
+	.services
+		&-grid
+			width: 1100px
+
+
+
+
+
 @media (max-width: 460px)
 	.header
 		flex-direction: column

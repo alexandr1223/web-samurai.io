@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             const hamburgerIcon = document.querySelector('.header-humburger');
             const hamburgerMenu = document.querySelector('.menu');
             const closeBtn = document.querySelector('.menu-close'); 
-            const headerMain = document.querySelector('.header-main');
             hamburgerIcon.addEventListener('click', () => {
                 document.body.style.overflow = 'hidden';
                 hamburgerMenu.style.right = '0';
